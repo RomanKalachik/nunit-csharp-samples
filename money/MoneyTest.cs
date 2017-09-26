@@ -8,11 +8,25 @@ namespace NUnit.Samples.Money
 {
 	using System;
 	using NUnit.Framework;
-	/// <summary>
-	/// 
-	/// </summary>
-	/// 
-	[TestFixture]
+    /// <summary>
+    /// 
+    /// </summary>
+    /// 
+    [TestFixture]
+    public class ClassWithoutTestsTests {
+
+        [Test]
+        public void TestA() {
+            ClassWithoutTests tests = new ClassWithoutTests();
+            tests.MethodA();
+        }
+        [Test]
+        public void TestB() {
+            ClassWithoutTests tests = new ClassWithoutTests();
+            tests.MethodA();
+        }
+    }
+    [TestFixture]
 	public class MoneyTest 
 	{
 		private Money f12CHF;

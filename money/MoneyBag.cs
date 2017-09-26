@@ -141,8 +141,8 @@ namespace NUnit.Samples.Money {
         }
     }
     public class ClassWithoutTests {
-        void MethodA() { }
-        void MethodB() { }
+        public void MethodA() { }
+        public void MethodB() { }
 
     }
 }
