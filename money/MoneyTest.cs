@@ -12,20 +12,20 @@ namespace NUnit.Samples.Money
     /// 
     /// </summary>
     /// 
-    [TestFixture]
-    public class ClassWithoutTestsTests {
+    //[TestFixture]
+    //public class ClassWithoutTestsTests {
 
-        [Test]
-        public void TestA() {
-            ClassWithoutTests tests = new ClassWithoutTests();
-            tests.MethodA();
-        }
-        [Test]
-        public void TestB() {
-            ClassWithoutTests tests = new ClassWithoutTests();
-            tests.MethodA();
-        }
-    }
+    //    [Test]
+    //    public void TestA() {
+    //        ClassWithoutTests tests = new ClassWithoutTests();
+    //        tests.MethodA();
+    //    }
+    //    [Test]
+    //    public void TestB() {
+    //        ClassWithoutTests tests = new ClassWithoutTests();
+    //        tests.MethodA();
+    //    }
+    //}
     [TestFixture]
 	public class MoneyTest 
 	{
