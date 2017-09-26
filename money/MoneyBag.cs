@@ -145,4 +145,27 @@ namespace NUnit.Samples.Money {
         public void MethodB() { }
 
     }
+    public class SomeBadCodeHere {
+        void LetsDoBadThings() {
+            int a = 0; ;
+            string b = "";
+            if((a > 10) && (a > 10)) {  // CRR0001 
+                bool c = b == "foo" || b == "foo";  // CRR0001 
+            }
+            int n1 = 20, n2 = 20;
+            for(int i = 0; i < n1; i++) {
+                for(int j = 0; i < n2; j++) { // CRR0002 
+                                              // ... 
+                }
+            }
+            for(int i = 0; i < n1; i++) {
+                for(int j = 0; j < n2; i++) { // CRR0003 
+                                              // ... 
+                }
+            }
+            bool condition = false;
+            var result = condition ? a + b : b + a; // CRR0004 
+
+        }
+    }
 }
