@@ -185,11 +185,11 @@ namespace NUnit.Samples.Money {
             else
                 DoSomething();
         }
-        public void Test(object obj) {
-            var str = obj as string;
-            if(obj == null)
-                return; // CRR0006 
-                        //... 
-        }
+        //public void Test(object obj) {
+        //    var str = obj as string;
+        //    if(obj == null)
+        //        return; // CRR0006 
+        //                //... 
+        //}
     }
 }
