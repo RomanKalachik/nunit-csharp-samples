@@ -151,45 +151,45 @@ namespace NUnit.Samples.Money {
         void DoSomething() {
             throw new NotImplementedException();
         }
-        //void LetsDoBadThings() {
-        //    int a = 0;
-        //    ;
-        //    string b = "";
-        //    if((a > 10) && (a > 10)) {  // CRR0001 
-        //        bool c = b == "foo" || b == "foo";  // CRR0001 
-        //    }
-        //    int n1 = 20, n2 = 20;
-        //    for(int i = 0; i < n1; i++) {
-        //        for(int j = 0; i < n2; j++) { // CRR0002 
-        //                                      // ... 
-        //        }
-        //    }
-        //    for(int i = 0; i < n1; i++) {
-        //        for(int j = 0; j < n2; i++) { // CRR0003 
-        //                                      // ... 
-        //        }
-        //    }
-        //    bool condition = false;
-        //    var result = condition ? a + b : b + a; // CRR0004 
+        void LetsDoBadThings() {
+            int a = 0;
+            ;
+            string b = "";
+            if((a > 10) && (a > 10)) {  // CRR0001 
+                bool c = b == "foo" || b == "foo";  // CRR0001 
+            }
+            int n1 = 20, n2 = 20;
+            for(int i = 0; i < n1; i++) {
+                for(int j = 0; i < n2; j++) { // CRR0002 
+                                              // ... 
+                }
+            }
+            for(int i = 0; i < n1; i++) {
+                for(int j = 0; j < n2; i++) { // CRR0003 
+                                              // ... 
+                }
+            }
+            bool condition = false;
+            var result = condition ? a + b : b + a; // CRR0004 
 
-        //    if(condition && !condition) { // CRR0005 
-        //                                  // ... 
-        //    }
-        //    string arg1 = "";
-        //    string arg2 = "";
+            if(condition && !condition) { // CRR0005 
+                                          // ... 
+            }
+            string arg1 = "";
+            string arg2 = "";
 
-        //    string s = string.Format("{0} {2}", arg1, arg2); // CRR0007 
+            string s = string.Format("{0} {2}", arg1, arg2); // CRR0007 
 
-        //    if(condition) // CRR0008 
-        //        DoSomething();
-        //    else
-        //        DoSomething();
-        //}
-        //public void Test(object obj) {
-        //    var str = obj as string;
-        //    if(obj == null)
-        //        return; // CRR0006 
-        //                //... 
-        //}
+            if(condition) // CRR0008 
+                DoSomething();
+            else
+                DoSomething();
+        }
+        public void Test(object obj) {
+            var str = obj as string;
+            if(obj == null)
+                return; // CRR0006 
+                        //... 
+        }
     }
 }
